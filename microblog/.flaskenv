@@ -1,6 +1,5 @@
 FLASK_APP=microblog.py
 FLASK_DEBUG=1
-FLASK_ENV=development
 
 # Debug settings for a local mailserver for debugging purposes
 MAIL_SERVER=localhost
