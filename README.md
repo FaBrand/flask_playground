@@ -18,6 +18,17 @@ Now you should be all set to run the application
 ```bash
 flask run
 ```
+## How to dev email communication
+With this command you can run a local smtp server that prints sent emails to stdout
+
+```bash
+python -m smtpd -n -c DebuggingServer localhost:8025
+```
+```
+export MAIL_SERVER=localhost
+export MAIL_PORT=8025
+```
+
 ## Links which were usefull along the way
  - [Online Sql Designer](http://ondras.zarovi.cz/sql/demo/) An online tool to model Relational database models
  - [Flask Mail](https://pythonhosted.org/Flask-Mail/) Plugin to send mails from the application
