@@ -11,7 +11,7 @@ After that you are ready to setup the environment:
 ```bash
 python3 -m venv venv
 source venv/bin/activate
-pip install wheel flask python-dotenv flask-wtf flask-sqlalchemy flask-migrate flask-login flask-mail pyjwt flask-bootstrap flask-moment
+pip install -r requirements.txt
 ```
 
 Now you should be all set to run the application
