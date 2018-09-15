@@ -29,6 +29,16 @@ export MAIL_SERVER=localhost
 export MAIL_PORT=8025
 ```
 
+## Setup elasticsearch
+Original source: [www.elastic.co](https://www.elastic.co/guide/en/elasticsearch/reference/current/deb.html)
+```bash
+wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
+echo "deb https://artifacts.elastic.co/packages/6.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-6.x.list
+sudo apt-get update && sudo apt-get install elasticsearch
+# Enable the service
+sudo /bin/systemctl daemon-reload
+sudo /bin/systemctl enable elasticsearch.service
+```
 ## Links which were usefull along the way
  - [Online Sql Designer](http://ondras.zarovi.cz/sql/demo/) An online tool to model Relational database models
  - [Flask Mail](https://pythonhosted.org/Flask-Mail/) Plugin to send mails from the application
